@@ -25,6 +25,7 @@ export function TopPopup() {
         onClose={onClose}
         isOpen={isOpen}
         motionPreset="slideInBottom"
+
       >
         <ModalOverlay />
         <ModalContent>
