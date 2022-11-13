@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const MidSection = () => {
+const Mid2 = () => {
   var data = [
     {
       id: 1,
@@ -145,10 +145,10 @@ const MidSection = () => {
   };
   return (
     <>
-      <Heading fontSize={20} my={10}>Chosen For You</Heading>
+      <Heading fontSize={20} my={10}>Just Dropped</Heading>
       <div
         style={{
-          backgroundColor: "whitesmoke",
+          backgroundColor: "wheat",
           padding: "20px",
           width: "99%",
           margin: "auto",
@@ -184,4 +184,4 @@ const MidSection = () => {
   );
 };
 
-export default MidSection;
+export default Mid2;
