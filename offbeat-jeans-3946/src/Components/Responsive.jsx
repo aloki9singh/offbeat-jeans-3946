@@ -21,17 +21,18 @@ const Responsive = () => {
         title:"Best of Dior"
         ,t2:"Luxe beauty for everyone on your list. "
     },
-    {
-      image:
-        "https://www.sephora.com/contentimages/2022-holiday-launch-general-site-desktop-home-page-hero-banner-rwd-v1-product-us-release-1000x750.jpg?imwidth=545",
-        title:"Value Sets? Obsessed!"
-        ,t2:"Limited edition and packed full of products⁠—fun to give, even better to get."
-    },
+   
     {
       image:
         "https://www.sephora.com/contentimages/2022-holiday-launch-general-site-desktop-home-page-hero-banner-rwd-v1-product-us-release-1000x750.jpg?imwidth=545",
         title:"In With the New"
         ,t2:"The latest beauty from the hottest brands. "
+    },
+    {
+      image:
+        "https://www.sephora.com/contentimages/2022-holiday-launch-general-site-desktop-home-page-hero-banner-rwd-v1-product-us-release-1000x750.jpg?imwidth=545",
+        title:"Value Sets? Obsessed!"
+        ,t2:"Limited edition and packed full of products⁠—fun to give, even better to get."
     },
   ];
   var settings = {

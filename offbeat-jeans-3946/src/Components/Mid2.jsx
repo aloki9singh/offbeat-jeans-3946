@@ -57,7 +57,7 @@ const Mid2 = () => {
     {
       id: 9,
       image:
-        "https://www.sephora.com/product/pillow-talk-beautifying-lip-set-P501333?icid2=homepage_productlist_chosenforyou_us_rwd_092022",
+        "https://www.sephora.com/productimages/sku/s2594364-main-zoom.jpg?imwidth=166",
       title: "Sol de janerio",
     },
     {
