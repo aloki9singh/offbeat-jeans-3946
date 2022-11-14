@@ -35,7 +35,7 @@ import {
 import axios from "axios";
 import React, { useState, useContext } from "react";
 
-import { Navigate } from "react-router-dom";
+import { Navigate, useNavigate } from "react-router-dom";
 import {
   loginFailureAction,
   loginSuccessAction,
@@ -71,8 +71,12 @@ export function Log() {
         dispatch(loginFailureAction());
       });
   };
+  const navigate =useNavigate()
   const handleLogout=()=>{
     dispatch(loginFailureAction());
+  }
+  const handleAdmin=()=>{
+   navigate("/admin")
   }
   if (state.isAuth) {
     return (
@@ -180,7 +184,7 @@ export function Log() {
               </Button>
      
               <Button ml={20}
-                onClick={handleLogin}
+                onClick={handleAdmin}
                 // isloading={state.isLoading}
                 bg="black"
                 color="white"

@@ -171,29 +171,32 @@ const Cart = () => {
       </Box>
       {/* //cart */}
       <Box>
-        <TableContainer mt={{ base: 20, sm: 20, md: 28, lg: 32 }}>
+        <TableContainer ml={20} mt={{ base: 20, sm: 20, md: 28, lg: 32 }}>
           <Table
             variant="simple"
             colorScheme="gray"
             size={{ base: "sm", sm: "sm", md: "md", lg: "lg" }}
+        
           >
             <TableCaption>No Exchange | No Refunds</TableCaption>
             <Thead>
               <Tr>
-              <Th fontSize={{ base: "xs", md: "md" }}>Image</Th>
+             
                 <Th fontSize={{ base: "xs", md: "md" }}>Product</Th>
                 <Th fontSize={{ base: "xs", md: "md" }}>Price (INR)</Th>
+                <Th fontSize={{ base: "xs", md: "md" }}>Image</Th>
                 <Th fontSize={{ base: "xs", md: "md" }}>Remove From Cart</Th>
               </Tr>
             </Thead>
             <Tbody>
               {state.map((cartItem) => (
                 <Tr key={cartItem.id}>
-                    <Td fontSize={{ base: "xs", md: "md" }}><Image src={cartItem.api_featured_image}  alt="prod-img"
-                        w="120px"
-                        h=""/></Td>
+                  
                   <Td fontSize={{ base: "xs", md: "md" }}>{cartItem.name}</Td>
                   <Td fontSize={{ base: "xs", md: "md" }}>{cartItem.price}</Td>
+                  <Td fontSize={{ base: "xs", md: "md" }}><Image src={cartItem.api_featured_image}  alt="prod-img"
+                        w="100px"
+                        h="100px"/></Td>
                   <Td fontSize={{ base: "xs", md: "md" }}>
                     <Button
                       onClick={() => dispatch(removeFromCart(cartItem.id))}
